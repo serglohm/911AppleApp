@@ -27,19 +27,19 @@ function ItemView(_params) {
 		top: '10dp',	
 		left: '10dp', right: '10dp',
 		font: {fontSize: '15dp', fontWeight: 'bold', fontFamily: 'Arial'},
-		color: '#FF1170'		
+		color: '#555'		
 	});
 	view.add(titleLabel);
 
 	var imgView = Ti.UI.createImageView({
 		left: '10dp', right: '10dp'
 	});	
-	imgView.defaultImage = '/images/mary_kay.png';
+	imgView.defaultImage = '/iphone/applelogo.png';
 	view.add(imgView);
 
 	var priceLabel = Ti.UI.createLabel({	
 		font: {fontSize: '20dp', fontFamily: 'Arial'},
-		color: '#FF1170',
+		color: '#555',
 		left: '10dp', right: '10dp',
 		text: ''
 	});
@@ -55,7 +55,7 @@ function ItemView(_params) {
 
 	var cartCountLabel = Ti.UI.createLabel({	
 		font: {fontSize: '15dp', fontFamily: 'Arial'},
-		color: "#FF1170",
+		color: "#555",
 		top: '10dp',
 		left: '10dp', right: '10dp',
 		text: 'В корзине ' + 0 + ' шт.'
@@ -73,7 +73,7 @@ function ItemView(_params) {
 		top: '0dp',
 		left: '10dp', right: '70dp',
 		//backgroundColor : '',
-		color: '#FF1170',
+		color: '#555',
 		title: 'Добавить в корзину'
 	});
 	cartButton.addEventListener('click', function(e){
@@ -91,7 +91,7 @@ function ItemView(_params) {
 		top: '0dp',
 		width: '50dp', right: '10dp',
 		//backgroundColor : '',
-		color: '#FF1170',
+		color: '#555',
 		title: 'F'
 	});	
 	favouriteButton.addEventListener('click', function(e){
@@ -135,7 +135,7 @@ function ItemView(_params) {
 		 
 		cartButton.title = 'В корзину';
 		priceLabel.text = 'Цена: ' + data.price + ' руб.';
-		imgView.image = 'http://www.mymarykay.ru/' + data.img;
+		imgView.image = engine.getUrlStart() + '/' + data.img;
 	};
 
 

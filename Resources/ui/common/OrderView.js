@@ -26,7 +26,7 @@ function OrderView(_params){
 			text: text,	
 			top: '10dp', left: '10dp', right: '10dp',
 			font: {fontSize: '15dp', fontWeight: 'bold', fontFamily: 'Arial'},
-			color: '#FF1170'		
+			color: '#555'		
 		});
 	};
 
@@ -85,7 +85,7 @@ function OrderView(_params){
 		top: '10dp', bottom: '15dp',
 		left: '10dp', right: '10dp',
 		//backgroundColor : '',
-		color: '#FF1170',
+		color: '#555',
 		title: 'Оформить заказ'
 	});
 	orderButton.addEventListener('click', function(e){

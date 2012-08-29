@@ -8,14 +8,14 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.1.GA</sdk-version>
-    <id>com.filigranltd.mymarykayapp</id>
-    <name>MyMaryKayApp</name>
+    <id>com.filigranltd.apple911</id>
+    <name>Apple 911</name>
     <version>1.0</version>
     <publisher>serglohm</publisher>
-    <url>http://mymarykayapp.filigranltd.com</url>
+    <url>http://apple911.filigranltd.com</url>
     <description>not specified</description>
     <copyright>2012 by serglohm</copyright>
-    <icon>appicon.png</icon>
+    <icon>IPhone_icon_aqua.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
